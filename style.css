@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    width: auto;
+    background-color: #1b1b1b;
+    color: white;
+  }
+  
+
+  body::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #4e4e4e;
+  }
+
+  
+  .navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    background-color: #1b1b1b;
+}
+
+.box1 {
+    flex: 1;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.box1 p {
+    margin: 0;
+}
+
+.navBar a{
+  text-decoration: none;
+}
+  .title {
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+    margin: auto;
+    color: black;
+  }
+  
+  @media screen and (max-width: 900px) {
+    /* Add styles for smaller screens here */
+  }
+  
+
+ 
