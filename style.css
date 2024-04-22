@@ -60,11 +60,23 @@ body {
     position: relative;
     margin: auto;
     color: black;
+   
   }
   
   @media screen and (max-width: 900px) {
-    /* Add styles for smaller screens here */
+   .title{
+    font-size: x-small;
+   }
   }
+
+  @media screen and (max-width: 400px) {
+    .title{
+     font-size: xx-small;
+    }
+   }
+   @media screen and (max-width: 600px) {
+ 
+   }
   
 
  
