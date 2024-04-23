@@ -41,6 +41,8 @@ body {
   typing 2s steps(22),
   cursor .6s step-end infinite alternate;
   border-right: 3px solid;
+  font-size: 20px;
+  font-family: "Silkscreen", sans-serif;
 }
 
 @keyframes cursor{
@@ -84,18 +86,18 @@ body {
   }
   
   @media screen and (max-width: 900px) {
-   .title{
+   .text{
     font-size: x-small;
    }
   }
 
   @media screen and (max-width: 400px) {
-    .title{
+    .text{
      font-size: xx-small;
     }
    }
-   @media screen and (max-width: 600px) {
- 
+   @media screen and (max-width: 375px) {
+    
    }
   
 
