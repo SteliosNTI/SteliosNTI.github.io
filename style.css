@@ -39,7 +39,7 @@ body {
   overflow: hidden;
   animation: 
   typing 2s steps(22),
-  cursor .6s step-end 8 alternate;
+  cursor .6s step-end 7 alternate;
   border-right: 0px solid;
   font-size: 20px;
   font-family: "Silkscreen", sans-serif;
