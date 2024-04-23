@@ -1,4 +1,5 @@
-const element = document.getElementById("a");
-function test(){
-element.scrollIntoView();
+function click(filename) {
+    var filePath = "path/to/your/directory/" + filename;
+    window.open("https://www.youtube.com", "_blank");
+
 }
