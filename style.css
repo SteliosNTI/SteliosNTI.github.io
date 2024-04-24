@@ -32,7 +32,6 @@ body {
 }
 
 .container{ display: inline-block;}
-.try{display: inline-block;}
 .text{
   width: 100%;
   white-space: nowrap;
@@ -93,7 +92,7 @@ body {
     color: black;
    
   }
-  
+
   @media screen and (max-width: 900px) {
    .text{
     font-size: x-small;
