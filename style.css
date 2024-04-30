@@ -118,7 +118,7 @@ body {
    @supports (scrollbar-color: auto){
     .mainBox{
       scrollbar-color: #2c2c2c #1b1b1b;
-      scrollbar-width:initial;
+      scrollbar-width:thin;
     }
   }
 
