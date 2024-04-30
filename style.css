@@ -122,27 +122,6 @@ body {
     }
   }
 
-  
-  @supports selector(::-webkit-scrollbar){
-    .mainBox::-webkit-scrollbar {
-       width: 5px;
-       height: 8px;
-       background-color: #aaa;
-     }
-
-    .mainBox::-webkit-scrollbar-thumb {
-       background: #4e4e4e;
-     }
-     .mainBox::-webkit-scrollbar {
-      width: 5px;
-      height: 8px;
-      background-color: #aaa;
-    }
-
-    .mainBox::-webkit-scrollbar-thumb {
-      background: #4e4e4e;
-    }
-   }
    ::selection {
     color: rgb(98, 229, 185);
     text-shadow:
