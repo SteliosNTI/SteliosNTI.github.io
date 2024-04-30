@@ -3,20 +3,7 @@ body {
     width: auto;
     background-color: #1b1b1b;
     color: white;
-    overflow-x:hidden;
   }
-  
-
-  body::-webkit-scrollbar {
-    width: 5px;
-    height: 8px;
-    background-color: #aaa;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: #4e4e4e;
-  }
-
   
   .navBar {
     display: flex;
@@ -27,8 +14,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     position: sticky;
-    top: 0;
-    background-color: #1b1b1b;
+    position: -webkit-sticky;
+    top: 5px;
+
 }
 
 .container{ display: inline-block;}
@@ -42,6 +30,10 @@ body {
   border-right: 0px solid;
   font-size: 20px;
   font-family: "Silkscreen", sans-serif;
+  color: rgb(98, 229, 185);
+  text-shadow:
+      0 0 10px #0fa;
+      background-color: rgb(6, 90, 62);
 
 }
 
@@ -51,6 +43,12 @@ body {
 }
 @keyframes typing {
   from {width: 0;}
+  5%{color: rgb(0,0,0);}
+  10%{color: rgb(98, 229, 185);}
+  15%{color: #000;}
+  20%{color: rgb(98, 229, 185);}
+  35%{color: #000;}
+ 
 }
 
 .box1 {
@@ -83,10 +81,10 @@ body {
   text-decoration: none;
 }
   .title {
-    background-color: antiquewhite;
+    background-color: rgb(37, 31, 24);
     text-align: center;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
     position: relative;
     margin: auto;
     color: black;
@@ -106,4 +104,37 @@ body {
    }
    @media screen and (max-width: 375px) {
     
+   }
+
+ 
+
+   @supports (scrollbar-color: auto){
+    html{
+      overflow-y: scroll;
+      scrollbar-color: #4e4e4e #aaa;
+      scrollbar-width: thin;
+    }
+  }
+
+  @supports selector(::-webkit-scrollbar) {
+    ::-webkit-scrollbar {
+       width: 5px;
+       height: 8px;
+       background-color: #aaa;
+     }
+     ::selection {
+      color: rgb(98, 229, 185);
+      text-shadow:
+          0 0 10px #0fa;
+          background-color: rgb(6, 90, 62);
+    }
+    
+    ::-moz-selection {
+      color: initial;
+      text-shadow: none;
+      background-color: initial;
+    }
+     ::-webkit-scrollbar-thumb {
+       background: #4e4e4e;
+     }
    }
