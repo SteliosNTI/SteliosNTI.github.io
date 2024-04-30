@@ -4,7 +4,17 @@ body {
     background-color: #1b1b1b;
     color: white;
   }
-  
+  .mainBox{
+    box-sizing: border-box;
+    overflow:auto;
+    margin: 0px;
+    padding: 10px;
+    height: 70vh;
+    width: 100%;
+  }
+  .textBox{
+ color: #0fa;
+  }
   .navBar {
     display: flex;
     justify-content: center;
@@ -105,36 +115,43 @@ body {
    @media screen and (max-width: 375px) {
     
    }
-
- 
-
    @supports (scrollbar-color: auto){
-    html{
-      overflow-y: scroll;
-      scrollbar-color: #4e4e4e #aaa;
-      scrollbar-width: thin;
+    .mainBox{
+      scrollbar-color: #2c2c2c #1b1b1b;
+      scrollbar-width:initial;
     }
   }
 
-  @supports selector(::-webkit-scrollbar) {
-    ::-webkit-scrollbar {
+  
+  @supports selector(::-webkit-scrollbar){
+    .mainBox::-webkit-scrollbar {
        width: 5px;
        height: 8px;
        background-color: #aaa;
      }
-     ::selection {
-      color: rgb(98, 229, 185);
-      text-shadow:
-          0 0 10px #0fa;
-          background-color: rgb(6, 90, 62);
-    }
-    
-    ::-moz-selection {
-      color: initial;
-      text-shadow: none;
-      background-color: initial;
-    }
-     ::-webkit-scrollbar-thumb {
+
+    .mainBox::-webkit-scrollbar-thumb {
        background: #4e4e4e;
      }
+     .mainBox::-webkit-scrollbar {
+      width: 5px;
+      height: 8px;
+      background-color: #aaa;
+    }
+
+    .mainBox::-webkit-scrollbar-thumb {
+      background: #4e4e4e;
+    }
    }
+   ::selection {
+    color: rgb(98, 229, 185);
+    text-shadow:
+        0 0 10px #0fa;
+        background-color: rgb(6, 90, 62);
+  }
+  
+  ::-moz-selection {
+    color: initial;
+    text-shadow: none;
+    background-color: initial;
+  }
