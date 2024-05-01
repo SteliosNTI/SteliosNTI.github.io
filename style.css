@@ -3,23 +3,38 @@ body {
     width: auto;
     background-color: #1b1b1b;
     color: white;
+    background-image: linear-gradient(to right, #000000, #4D4855);
   }
   .mainBox{
+    display: flex;
     box-sizing: border-box;
     overflow:auto;
     margin: 0px;
     padding: 10px;
     height: 70vh;
     width: 100%;
+    border: 2px gold;
+    justify-content: center;
+    align-items: center;
+  }
+  .Header{
+    font-size: xx-large;
   }
   .textBox{
+  padding: 20px;
  color: #0fa;
+ height: 100px;
+  }
+  .subBox{
+    overflow: auto;
+    display: flex;
+    height: 100%
   }
   .navBar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: auto  ;
     width: 100%;
     padding: 0;
     box-sizing: border-box;
@@ -62,11 +77,10 @@ body {
 }
 
 .box1 {
-    height: 100px;
-    width: 100px;
-    margin: 25px;
-    border-radius: 10px;
-    background-color: aquamarine;
+  height: 85px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #80919e;
     box-sizing: border-box;
     text-align: center;
     display: flex;
@@ -91,7 +105,7 @@ body {
   text-decoration: none;
 }
   .title {
-    background-color: rgb(37, 31, 24);
+    background-image: linear-gradient(to right,#12100E, #2B4162);
     text-align: center;
     border-radius: 10px;
     width: 100%;

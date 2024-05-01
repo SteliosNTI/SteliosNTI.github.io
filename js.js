@@ -1,3 +1,3 @@
 function klick(filename) {
-    window.open(filename, "_self");
+    window.open(filename, "_blank");
 }
