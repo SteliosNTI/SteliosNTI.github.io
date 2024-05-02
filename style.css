@@ -3,6 +3,7 @@ body {
     width: auto;
     background-color: #1b1b1b;
     color: white;
+    overflow-x: hidden;
     background-image: linear-gradient(to right, #000000, #4D4855);
   }
   .mainBox{
@@ -11,7 +12,7 @@ body {
     overflow:auto;
     margin: 0px;
     padding: 10px;
-    max-height: 70vh;
+    max-height: 73.55vh;
     width: 100%;
     border: 2px gold;
     justify-content: center;
@@ -30,6 +31,7 @@ body {
     display: block;
     height: auto;
     width: 50%;
+   
   }
 
   .exampleBox{
@@ -87,22 +89,28 @@ body {
 }
 
 .box1 {
+
   height: 85px;
-  width: 100%;
-  border-radius: 5px;
-  background-image: linear-gradient(to right bottom, black, #6d2bd0);
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    cursor: pointer;  
-    border: none;
+  width: 100%;  border-radius: 8px;
+  background-image: linear-gradient(to top, #101825, #2B4162);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  border: none;  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
+  transition: all 0.3s ease-in-out;
+  color: white;
+  z-index: 0;
 }
 .box1:hover{
-  filter: brightness(70%);
-  box-shadow: 8px 3px 10px white;
+  box-shadow: 0px 8px 20px white;
+  filter: brightness(150%);
+  transform: translateY(-8px) scale(1.01);
+  
+  z-index: 999;
 }
 .box1:active{
   filter: brightness(90%);
