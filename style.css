@@ -11,11 +11,11 @@ body {
     overflow:auto;
     margin: 0px;
     padding: 10px;
-    height: 70vh;
+    max-height: 70vh;
     width: 100%;
     border: 2px gold;
     justify-content: center;
-    align-items: center;
+    
   }
   .Header{
     font-size: xx-large;
@@ -24,14 +24,20 @@ body {
 
   .textBox{
   padding: 20px;
+  width: 300px;
   }
   .subBox{
-    overflow: auto;
-    height: 100%;
+    display: block;
+    height: auto;
+    width: 50%;
   }
 
   .exampleBox{
-    width: 10px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right bottom, #000000, #4D4855);
+    width: 50%;
+    padding: 20px;
+    height: auto;
   }
 
   .navBar {
@@ -84,18 +90,19 @@ body {
   height: 85px;
   width: 100%;
   border-radius: 5px;
-  background-color: #80919e;
+  background-image: linear-gradient(to right bottom, black, #6d2bd0);
     box-sizing: border-box;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    cursor: pointer;
+    color: white;
+    cursor: pointer;  
     border: none;
 }
 .box1:hover{
   filter: brightness(70%);
+  box-shadow: 8px 3px 10px white;
 }
 .box1:active{
   filter: brightness(90%);
