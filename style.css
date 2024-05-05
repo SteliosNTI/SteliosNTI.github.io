@@ -16,7 +16,7 @@ body {
     width: 100%;
     border: 2px gold;
     justify-content: center;
-    
+    flex-wrap: wrap;
   }
   .Header{
     font-size: xx-large;
@@ -25,7 +25,7 @@ body {
 
   .textBox{
   padding: 20px;
-  width: 300px;
+ 
   }
   .subBox{
     display: block;
@@ -145,8 +145,19 @@ body {
      font-size: xx-small;
     }
    }
-   @media screen and (max-width: 375px) {
-    
+   @media screen and (max-width: 455px) {
+    .exampleBox{
+      display: none;
+      width: 0;
+    }
+    .subBox{
+      width: 100%;
+    }
+ 
+    .Header{
+      padding: 0%;
+    }
+
    }
    @supports (scrollbar-color: auto){
     .mainBox{
