@@ -11,12 +11,22 @@ body {
     box-sizing: border-box;
     overflow:auto;
     margin: 0px;
+  width: 100%;
     padding: 10px;
     max-height: 73.55vh;
-    width: 100%;
+    min-height: 50vh;
+    position: absolute;
+    left: 10vw;
     border: 2px gold;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .center{
+    border: 5px solid;
+    position: absolute;
+    left: 50%;
   }
   .Header{
     font-size: xx-large;
@@ -27,19 +37,20 @@ body {
   padding: 20px;
  
   }
+  .subBox1{
+    margin: 50px;
+  }
   .subBox{
     display: block;
-    height: auto;
-    width: 50%;
-   
+    height: fit-content;
   }
 
   .exampleBox{
     box-sizing: border-box;
     background-image: linear-gradient(to right bottom, #000000, #4D4855);
-    width: 50%;
+    margin: 10px;
     padding: 20px;
-    height: auto;
+    height: fit-content;
   }
 
   .navBar {
