@@ -1,108 +1,142 @@
 body {
-    margin: 0;
-    width: auto;
-    background-color: #1b1b1b;
-    color: white;
-    overflow-x: hidden;
-    background-image: linear-gradient(to right, #000000, #4D4855);
-  }
-  .mainBox{
-    display: flex;
-    box-sizing: border-box;
-    overflow:auto;
-    margin: 0px;
-  width: 100%;
-    padding: 10px;
-    max-height: 73.55vh;
-    min-height: 50vh;
-    position: absolute;
-    left: 10vw;
-    border: 2px gold;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .center{
-    border: 5px solid;
-    position: absolute;
-    left: 50%;
-  }
-  .Header{
-    font-size: xx-large;
-    padding: 20px;
-  }
+  margin: 0;
+  width: auto;
+  background-color: #1b1b1b;
+  color: white;
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #000000, #4D4855);
+}
 
-  .textBox{
+.mainBox {
+  display: flex;
+  box-sizing: border-box;
+  overflow: auto;
+  margin: 0px;
+  width: 97.5%;
+  padding: 10px;
+  max-height: 73.55vh;
+  min-height: 50vh;
+  position: absolute;
+  left: 2.5vw;
+  border: 2px gold;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  border: 5px solid;
+  position: absolute;
+  left: 50%;
+}
+
+.Header {
+  font-size: xx-large;
   padding: 20px;
- 
-  }
-  .subBox1{
-    margin: 50px;
-  }
-  .subBox{
-    display: block;
-    height: fit-content;
-  }
+}
 
-  .exampleBox{
-    box-sizing: border-box;
-    background-image: linear-gradient(to right bottom, #000000, #4D4855);
-    margin: 10px;
-    padding: 20px;
-    height: fit-content;
-  }
+.Header1 {
+  font-size: xx-large;
+  padding: 20px;
+  padding-right: 125px;
+}
 
-  .navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto  ;
-    width: 100%;
-    padding: 0;
-    box-sizing: border-box;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 5px;
+.textBox {
+  padding: 20px;
 
 }
 
-.container{ display: inline-block;}
-.text{
+
+.subBox {
+  display: block;
+  height: fit-content;
+  margin: 25px
+}
+
+.exampleBox {
+  box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, #000000, #4D4855);
+  margin: 10px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 5px;
+
+}
+
+.container {
+  display: inline-block;
+}
+
+.text {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  animation: 
-  typing 2s steps(22),
-  cursor .6s step-end 7 alternate;
+  animation:
+    typing 2s steps(22),
+    cursor .6s step-end 7 alternate;
   border-right: 0px solid;
   font-size: 20px;
   font-family: "Silkscreen", sans-serif;
   color: rgb(98, 229, 185);
   text-shadow:
-      0 0 10px #0fa;
-      background-color: rgb(6, 90, 62);
+    0 0 10px #0fa;
+  background-color: rgb(6, 90, 62);
 
 }
 
-@keyframes cursor{
-  0% {border-right: 3px solid #000; }
-  50% {border-right: 3px solid transparent; }
+@keyframes cursor {
+  0% {
+    border-right: 3px solid #000;
+  }
+
+  50% {
+    border-right: 3px solid transparent;
+  }
 }
+
 @keyframes typing {
-  from {width: 0;}
-  5%{color: rgb(0,0,0);}
-  10%{color: rgb(98, 229, 185);}
-  15%{color: #000;}
-  20%{color: rgb(98, 229, 185);}
-  35%{color: #000;}
- 
+  from {
+    width: 0;
+  }
+
+  5% {
+    color: rgb(0, 0, 0);
+  }
+
+  10% {
+    color: rgb(98, 229, 185);
+  }
+
+  15% {
+    color: #000;
+  }
+
+  20% {
+    color: rgb(98, 229, 185);
+  }
+
+  35% {
+    color: #000;
+  }
 }
 
 .box1 {
-
   height: 85px;
-  width: 100%;  border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
   background-image: linear-gradient(to top, #101825, #2B4162);
   box-sizing: border-box;
   text-align: center;
@@ -111,81 +145,87 @@ body {
   align-items: center;
   color: black;
   cursor: pointer;
-  border: none;  
+  border: none;
   transition: all 0.3s ease-in-out;
   color: white;
   z-index: 0;
 }
-.box1:hover{
+
+.box1:hover {
   box-shadow: 0px 8px 20px white;
   filter: brightness(150%);
   transform: translateY(-8px) scale(1.01);
-  
+
   z-index: 999;
 }
-.box1:active{
+
+.box1:active {
   filter: brightness(90%);
 }
 
 .box1 p {
-    margin: 0;
+  margin: 0;
 }
 
-.navBar a{
+.navBar a {
   text-decoration: none;
 }
-  .title {
-    background-image: linear-gradient(to right,#12100E, #2B4162);
-    text-align: center;
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    margin: auto;
-    color: black;
-   
-  }
 
-  @media screen and (max-width: 900px) {
-   .text{
+.title {
+  background-image: linear-gradient(to right, #12100E, #2B4162);
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  color: black;
+
+}
+
+@media screen and (max-width: 900px) {
+  .text {
     font-size: x-small;
-   }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text {
+    font-size: xx-small;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .exampleBox {
+    display: none;
+    width: 0;
   }
 
-  @media screen and (max-width: 400px) {
-    .text{
-     font-size: xx-small;
-    }
-   }
-   @media screen and (max-width: 455px) {
-    .exampleBox{
-      display: none;
-      width: 0;
-    }
-    .subBox{
-      width: 100%;
-    }
- 
-    .Header{
-      padding: 0%;
-    }
-
-   }
-   @supports (scrollbar-color: auto){
-    .mainBox{
-      scrollbar-color: #2c2c2c #1b1b1b;
-      scrollbar-width:thin;
-    }
+  .subBox {
+    width: 100%;
   }
 
-   ::selection {
-    color: rgb(98, 229, 185);
-    text-shadow:
-        0 0 10px #0fa;
-        background-color: rgb(6, 90, 62);
+  .Header {
+    padding: 0%;
   }
-  
-  ::-moz-selection {
-    color: initial;
-    text-shadow: none;
-    background-color: initial;
+
+}
+
+@supports (scrollbar-color: auto) {
+  .mainBox {
+    scrollbar-color: #2c2c2c #1b1b1b;
+    scrollbar-width: thin;
   }
+}
+
+::selection {
+  color: rgb(98, 229, 185);
+  text-shadow:
+    0 0 10px #0fa;
+  background-color: rgb(6, 90, 62);
+}
+
+::-moz-selection {
+  color: initial;
+  text-shadow: none;
+  background-color: initial;
+}
