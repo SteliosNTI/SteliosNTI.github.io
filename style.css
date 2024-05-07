@@ -47,10 +47,10 @@ body {
 
 }
 
-
 .subBox {
   display: block;
   height: fit-content;
+  width: fit-content;
   margin: 25px
 }
 
@@ -60,6 +60,7 @@ body {
   margin: 10px;
   padding: 20px;
   height: fit-content;
+  width: 525px;
 }
 
 .navBar {
@@ -179,7 +180,12 @@ body {
   position: relative;
   margin: auto;
   color: black;
+}
 
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 900px) {
@@ -225,7 +231,8 @@ body {
 }
 
 ::-moz-selection {
-  color: initial;
-  text-shadow: none;
-  background-color: initial;
+  color: rgb(98, 229, 185);
+  text-shadow:
+    0 0 10px #0fa;
+  background-color: rgb(6, 90, 62);
 }
