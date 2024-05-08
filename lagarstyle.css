@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    width: auto;
+    background-color: #1b1b1b;
+    color: white;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #000000, #4D4855);
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5px;
+}
+
+.container {
+    display: inline-block;
+}
+
+.title {
+    background-image: linear-gradient(to right, #12100E, #2B4162);
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    color: black;
+}
+
+.text {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(22),
+        cursor .6s step-end 7 alternate;
+    border-right: 0px solid;
+    font-size: 20px;
+    font-family: "Silkscreen", sans-serif;
+    color: rgb(98, 229, 185);
+    text-shadow:
+        0 0 10px #0fa;
+    background-color: rgb(6, 90, 62);
+
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 3px solid #000;
+    }
+
+    50% {
+        border-right: 3px solid transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    5% {
+        color: rgb(0, 0, 0);
+    }
+
+    10% {
+        color: rgb(98, 229, 185);
+    }
+
+    15% {
+        color: #000;
+    }
+
+    20% {
+        color: rgb(98, 229, 185);
+    }
+
+    35% {
+        color: #000;
+    }
+}
+
+.box1 {
+    height: 85px;
+    width: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #101825, #2B4162);
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    z-index: 0;
+}
+
+.box1:hover {
+    box-shadow: 0px 8px 20px white;
+    filter: brightness(150%);
+    transform: translateY(-8px) scale(1.01);
+    z-index: 999;
+}
+
+.box1:active {
+    filter: brightness(90%);
+}
+
+.box1 p {
+    margin: 0;
+}
+
+.navBar a {
+    text-decoration: none;
+}
