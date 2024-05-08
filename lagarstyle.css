@@ -34,6 +34,37 @@ body {
     color: black;
 }
 
+.mainBox {
+    display: flex;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 0px;
+    width: 83.4%;
+    padding: 10px;
+    height: 81vh;
+    max-height: 81vh;
+    min-height: 50vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+
+.subBox {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    margin: 25px
+}
+
 .text {
     width: 100%;
     white-space: nowrap;
@@ -97,7 +128,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
     cursor: pointer;
     border: none;
     transition: all 0.3s ease-in-out;
@@ -123,3 +153,53 @@ body {
 .navBar a {
     text-decoration: none;
 }
+
+.sideNav {
+    border-radius: 5px;
+    width: 15%;
+    height: 81vh;
+    max-height: 81vh;
+    overflow: auto;
+    padding: 10px;
+    background-image: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(17 19 24) 70.2%);
+}
+
+.navBTN {
+    box-sizing: border-box;
+    width: 95%;
+    height: 40px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #101825, #2B4162);
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.navBTN:hover {
+    box-shadow: 0px 4px 10px white;
+    filter: brightness(150%);
+    transform: translateY(-2px) scale(1.001);
+    z-index: 999;
+}
+
+::selection {
+    color: rgb(98, 229, 185);
+    text-shadow:
+      0 0 10px #0fa;
+    background-color: rgb(6, 90, 62);
+  }
+  
+  ::-moz-selection {
+    color: rgb(98, 229, 185);
+    text-shadow:
+      0 0 10px #0fa;
+    background-color: rgb(6, 90, 62);
+  }

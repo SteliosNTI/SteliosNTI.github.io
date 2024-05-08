@@ -123,3 +123,17 @@ body {
 .navBar a {
     text-decoration: none;
 }
+
+::selection {
+    color: rgb(98, 229, 185);
+    text-shadow:
+      0 0 10px #0fa;
+    background-color: rgb(6, 90, 62);
+  }
+  
+  ::-moz-selection {
+    color: rgb(98, 229, 185);
+    text-shadow:
+      0 0 10px #0fa;
+    background-color: rgb(6, 90, 62);
+  }
