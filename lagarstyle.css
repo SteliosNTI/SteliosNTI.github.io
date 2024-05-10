@@ -60,11 +60,17 @@ body {
     /* justify-content: center; */
 }
 
+.heading{
+    display: block;
+    font-size: 50px;
+    width: 100%; /* Make the header take up the full width */
+}
+
+.info{
+    width: 100%;
+}
 
 .subBox {
-    display: block;
-    height: fit-content;
-    width: fit-content;
     margin: 25px
 }
 
@@ -158,6 +164,7 @@ body {
 }
 
 .sideNav {
+    box-sizing: border-box;
     border-radius: 5px;
     width: calc(100vw - 85vw);
     overflow: auto;
@@ -167,6 +174,7 @@ body {
 
 .navBTN {
     box-sizing: border-box;
+    margin-top: 10px;
     width: 95%;
     height: 40px;
     border-radius: 8px;
@@ -182,6 +190,7 @@ body {
     color: white;
     z-index: 0;
     text-decoration: none;
+
 }
 
 .navBTN:hover {
@@ -190,14 +199,7 @@ body {
     transform: translateY(-2px) scale(1.01);
     z-index: 999;
 }
-.navBTN:active{
-    background-image: none;
-    background-color: teal;
-}
-.navBTN:visited{
-    background-image: none;
-    background-color: goldenrod;
-}
+
 
 ::selection {
     color: rgb(98, 229, 185);
