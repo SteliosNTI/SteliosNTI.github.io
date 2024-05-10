@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lagarstyle.css">
-    <title>Javascript</title>
+    <title>Lagar</title>
     <link rel="stylesheet" href="lagarstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,19 +24,23 @@
         <a href="CSS.html" class="box1">CSS</a>
         <a href="javaSC.html" class="box1">Javascript</a>
     </div>
-    <div class="wrapper">
-    <div class="sideNav">
-        <a class="navBTN" href="CSS.html"><span>Test</span></a>
-    </div>
-    <div class="mainBox">
-        <div class="wrapper">
-            <div id="h1" class="subBox">
-                <span><h1>Header1</h1></span>
+    <div class="wrapperMain">
+        <div class="sideNav">
+            <a onclick="btn('kakor')" id="kakor" class="navBTN" href="#kakor"><span>Kakor</span></a>
+            <a onclick="btn('lags')" id="lags" class="navBTN" href="#kakor"><span>Lags</span></a>
+            <a onclick="btn('lager')" id="lager" class="navBTN" href="#kakor"><span>Lager</span></a>
+        </div>
+        <div class="mainBox">
+            <div class="wrapper">
+                <div id="kakor" class="subBox">
+                    <span>
+                        <h1>Kakor</h1>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</body>
+    <script src="js.js"></script>
 </body>
 
 </html>
