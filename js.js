@@ -10,3 +10,7 @@ function btn(BTNid) {
     newBTN.style.color = "red";
     oldBTN = newBTN; 
 }
+function toggleSideNav() {
+    var sideNav = document.querySelector('.sideNav');
+    sideNav.classList.toggle('hidden');
+}
