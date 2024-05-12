@@ -63,11 +63,12 @@ body {
 }
 
 .close {
-    width: 10px;
-    display: block;
-    cursor: pointer;
-    transition: all 1s ease-in-out;
-    z-index: -1;
+  width: 17px;
+  display: block;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  z-index: -1;
+  font-size: 30px;
 
 }
 
@@ -159,7 +160,7 @@ body {
 @media screen and (max-width:900px) {
     .sideNav {
         padding: 0;
-        width: 450px;
+        width: 150px;
     }
 }
 

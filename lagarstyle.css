@@ -99,12 +99,12 @@ body {
 }
 
 .close {
-    width: 10px;
+    width: 17px;
     display: block;
     cursor: pointer;
     transition: all 1s ease-in-out;
     z-index: -1;
-
+    font-size: 30px;
 }
 
 .close:hover {
@@ -123,8 +123,8 @@ body {
 
 .BTNnav {
     position: absolute;
-    z-index: 0;
-    font-size: 0px;
+    z-index: 1;
+    font-size: 0;
     cursor: pointer;
 }
 
