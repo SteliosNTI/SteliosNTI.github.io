@@ -13,4 +13,7 @@ function btn(BTNid) {
 function toggleSideNav() {
     var sideNav = document.querySelector('.sideNav');
     sideNav.classList.toggle('hidden');
+
+    var butn = document.querySelector('.BTNnav');
+    butn.classList.toggle('visible');
 }

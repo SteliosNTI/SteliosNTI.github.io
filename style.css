@@ -188,17 +188,6 @@ body {
   justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
-  .text {
-    font-size: x-small;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .text {
-    font-size: xx-small;
-  }
-}
 
 @media screen and (max-width: 455px) {
   .exampleBox {
@@ -206,12 +195,20 @@ body {
     width: 0;
   }
 
+  .text{
+    font-size: 15px;
+  }
+
   .subBox {
     width: 100%;
   }
 
+  .Header1{
+    padding: 0;
+  }
+
   .Header {
-    padding: 0%;
+    padding: 0;
   }
 
 }

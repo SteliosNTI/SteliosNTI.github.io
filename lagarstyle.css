@@ -42,30 +42,28 @@ body {
     height: 100%;
     justify-content: center;
     flex-wrap: wrap;
- 
 }
 
 .wrapperMain {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    /* justify-content: center; */
     height: calc(100vh - 142px);
 }
+
 .wrapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
 }
 
-.heading{
+.heading {
     display: block;
     font-size: 50px;
-    width: 100%; /* Make the header take up the full width */
+    width: 100%;
 }
 
-.info{
+.info {
     width: 100%;
 }
 
@@ -96,15 +94,21 @@ body {
     z-index: 999;
 }
 
-.close{
+.navBTN:active  {
+    filter: blur(0.5px);
+}
+
+.close {
     width: 10px;
     display: block;
     cursor: pointer;
     transition: all 1s ease-in-out;
+    z-index: -1;
+
 }
 
-.close:hover{
-    transform: rotate(180deg); 
+.close:hover {
+    transform: rotate(180deg);
 }
 
 .sideNav {
@@ -113,24 +117,28 @@ body {
     width: calc(100vw - 85vw);
     overflow: auto;
     padding: 10px;
-    background-image: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(17 19 24) 70.2%);
-    z-index: 2;
+    background-image: linear-gradient(180deg, rgba(32, 38, 57, 1) 0%, rgba(17, 19, 24, 0) 50%);
+    z-index: 5;
 }
 
-  .sideNav.hidden {
-    width: 0; 
-    padding: 0; 
-    overflow: hidden; 
-}
-
-.BTNnav{
+.BTNnav {
     position: absolute;
     z-index: 0;
-    font-size:30px;
-    cursor:pointer;
+    font-size: 0px;
+    cursor: pointer;
 }
-@media screen and (max-width:900px){
-    .sideNav{
+
+.BTNnav.visible {
+    font-size: 30px;
+}
+.sideNav.hidden {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width:900px) {
+    .sideNav {
         padding: 0;
         width: 450px;
     }
@@ -138,17 +146,37 @@ body {
 
 @media screen and (max-width: 425px) {
     .text {
-      font-size: 15px;
+        font-size: 15px;
     }
- .wrapperMain{
-    height: calc(100vh - 127px);
- }
- .navBTN:hover {
-    box-shadow: 0px 0px 0px white;
-  }
-  .subBox{
-    margin: 5px;
-  }
+
+    .wrapperMain {
+        height: calc(100vh - 127px);
+    }
+
+    .navBTN:hover {
+        box-shadow: 0px 0px 0px white;
+    }
+
+    .subBox {
+        margin: 5px;
+    }
+
+    .sideNav {
+        width: 0;
+    }
+
+    .sideNav.hidden {
+        width: 705px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .heading {
+        padding-top: 20px;
+    }
+    .BTNnav{
+        font-size: 30px;
+    }
 }
 
 @keyframes cursor {
@@ -247,21 +275,21 @@ body {
 
 @supports (scrollbar-color: auto) {
     .mainBox {
-      scrollbar-color: #2c2c2c #1b1b1b;
-      scrollbar-width: thin;
+        scrollbar-color: #2c2c2c #1b1b1b;
+        scrollbar-width: thin;
     }
-  }
+}
 
 ::selection {
     color: rgb(98, 229, 185);
     text-shadow:
-      0 0 10px #0fa;
+        0 0 10px #0fa;
     background-color: rgb(6, 90, 62);
-  }
-  
-  ::-moz-selection {
+}
+
+::-moz-selection {
     color: rgb(98, 229, 185);
     text-shadow:
-      0 0 10px #0fa;
+        0 0 10px #0fa;
     background-color: rgb(6, 90, 62);
-  }
+}
