@@ -24,6 +24,10 @@ body {
     display: inline-block;
 }
 
+.example{
+  font-size: xx-large;
+}
+
 .title {
     background-image: linear-gradient(to right, #12100E, #2B4162);
     text-align: center;
