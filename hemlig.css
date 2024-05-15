@@ -1,0 +1,54 @@
+body {
+
+    background-color: red;
+    animation-name: rainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+
+    10% {
+        background-color: orange;
+    }
+
+    20% {
+        background-color: yellow;
+    }
+
+    30% {
+        background-color: green;
+    }
+
+    40% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: indigo;
+    }
+
+    60% {
+        background-color: violet;
+    }
+
+    70% {
+        background-color: pink;
+    }
+
+    80% {
+        background-color: cyan;
+    }
+
+    90% {
+        background-color: magenta;
+    }
+
+    100% {
+        background-color: red;
+    }
+}

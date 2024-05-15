@@ -17,3 +17,13 @@ function toggleSideNav() {
     var butn = document.querySelector('.BTNnav');
     butn.classList.toggle('visible');
 }
+
+document.getElementById("form").onsubmit = function(){
+    event.preventDefault(); 
+   let inputs = document.getElementById("text").value;
+   if (inputs == 'stelios'){
+    for (let i = 0; i < 3; i++) {
+     window.open("/hemlig.html")
+    }
+   }
+}
