@@ -20,8 +20,10 @@ function toggleSideNav() {
 
 document.getElementById("form").onsubmit = function(){
     event.preventDefault(); 
-   let inputs = document.getElementById("text").value;
-   if (inputs == 'stelios'){
+   
+    let inputs = document.getElementById("text").value.toLowerCase();
+
+   if (inputs == 'natalie'){
     for (let i = 0; i < 3; i++) {
      window.open("/hemlig.html")
     }
