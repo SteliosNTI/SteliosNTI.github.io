@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="stylehtml.css">
+    <link rel="stylesheet" href="stylehtml.css">
     <title>HyperText Markup Language</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="title">
         <div class="container">
@@ -24,13 +26,14 @@
     <div class="wrapperMain">
         <span class="BTNnav" onclick="toggleSideNav()">&#9776;</span>
         <div class="sideNav">
-           <span class="close" onclick="toggleSideNav()">&times;</span>
+            <span class="close" onclick="toggleSideNav()">&times;</span>
             <a onclick="btn('vadÄrDet')" id="vadÄrDet" class="navBTN" href="#whatIsIT"><span>Vad är HTML?</span></a>
             <a onclick="btn('GDPR')" id="GDPR" class="navBTN" href="#exempel"><span>Exempel</span></a>
             <a onclick="btn('H1')" id="H1" class="navBTN" href="#h1"><span>H1</span></a>
             <a onclick="btn('div')" id="div" class="navBTN" href="#Div"><span>Div</span></a>
             <a onclick="btn('inp')" id="inp" class="navBTN" href="#input"><span>Form</span></a>
             <a onclick="btn('button')" id="button" class="navBTN" href="#btn"><span>Button</span></a>
+            <a onclick="btn('A')" id="A" class="navBTN" href="#a"><span>&lt;a&gt;</span></a>
         </div>
         <div class="mainBox">
             <div class="wrapper">
@@ -39,10 +42,42 @@
                     <span>HTML är en förkortning för HyperText Markup Language</span>
                     <br>
                     <br>
-                    <span>HTML är inte ett programmeringsspråk, utom ät märkspråk, men vad är skiollnaden?<br> <br> Ett programmeringssprål ska kunna utföra kommandon vilket HTML inte kan.</span>
+                    <span>HTML är inte ett programmeringsspråk, utom ät märkspråk, men vad är skiollnaden?<br> <br> Ett
+                        programmeringssprål ska kunna utföra kommandon vilket HTML inte kan.</span>
                     <br>
                     <br>
-                    <span>HTML är bara strukturen för en hemmsida, CSS och Javascript är det viktiga för att få en hemsida att se bra ut och funktionell</span>
+                    <span>HTML är bara strukturen för en hemmsida, CSS och Javascript är det viktiga för att få en
+                        hemsida att se bra ut och funktionell</span>
+                    <br>
+                    <span>Innan vi börjar, skapa en ny fil och döp den till .html på slutet jag rekomenderar att använda
+                        visual studio code för detta, omdu inte vet hur man använder den kan du lära dig det <a
+                            style="color: white;" href="https://youtu.be/besIVwdKo8c?si=AY_rV1ELLjSUwHjR&t=210">här</a>.
+                        Kom ihåg att skapa en folder på din desktop där du kan öppnna folder i visual studio och sedan
+                        klicka new file och döp den till vad som hälst men den ska sluta på .html</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="subBox">
+                    <span class="example">Viktiga saker</span>
+                    <br>
+                    <br>
+                    <span>När du skapat ett .html fil måste du se till att den börjar med &lt;!DOCTYPE html&gt; där
+                        efter en &lt;html&gt; tag om du vill se ett bra exempel klicka på <a style="color: white;"
+                            href="index.html">hem knappen</a>. </span>
+                    <br>
+                    <span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span><span>är en
+                        viktig tag som ska vara i head, den gör att man kan skapa en responsiv sida, du kommer lära dig
+                        mer om detta på <a style="color: white;" href="CSS.html">CSS fliken</a>.</span>
+                    <br>
+                    <span>En bra sak att kunna är att lägga en class på varje element för att kunna stilla den på ett
+                        separat script. </span>
+                    <br>
+                    <span>För att göra detta låt oss säga stycke elementet gör man &lt;p class="Classnamn"&gt; </span>
+                    <br>
+                    <br>
+                    <span>Annan snab sak att kunna är id, lägg &lt;p id="Ditt Id namn här"&gt;</span>
+                    <br>
+                    <span>Id används för Javascript och för &lt;a&gt; elementet att kunna scrolla ned till den.</span>
                 </div>
             </div>
             <div class="wrapper">
@@ -50,32 +85,39 @@
                     <span class="heading">Vanliga elements</span>
                     <span>Innan vi börjar lista vanliga elements, vad är ett element?</span>
                     <br>
-                    <span>Ett HTML-element används för att strukturera HTML, den har attribut och kan stillas med css.</span>
+                    <span>Ett HTML-element används för att strukturera HTML, den har attribut och kan stillas med
+                        css.</span>
                     <br>
-                    <br>
+
                     <span class="example">&lt;p&gt;</span><span class="example">&lt;/p&gt;</span>
                     <br>
-                    <span>&lt;p&gt; är en av det vanliga HTML-Element som används, det står för paragraph eller stycke på svenska.</span>
+                    <span>&lt;p&gt; är en av det vanliga HTML-Element som används, det står för paragraph eller stycke
+                        på svenska.</span>
                     <br>
-                    <span>&lt;p&gt; Är alltid 100% av skärmen, detta betyder att den har en ett mellanrum mellan raderna.</span>
+                    <span>&lt;p&gt; Är alltid 100% av skärmen, detta betyder att den har en ett mellanrum mellan
+                        raderna.</span>
                 </div>
                 <div class="wrapper">
                     <div id="h1" class="subBox">
-                        <span class="example">&lt;h1&gt; &lt;/h1&gt;</span> 
+                        <span class="example">&lt;h1&gt; &lt;/h1&gt;</span>
                         <br>
-                        <span>h1 är till för sökmotorer för att hitta din sida, Darför är det den viktigaste headingen.</span>
+                        <span>h1 är till för sökmotorer för att hitta din sida, Darför är det den viktigaste
+                            headingen.</span>
                     </div>
                 </div>
                 <div class="wrapper">
                     <div id="Div" class="subBox">
-                        <span class="example">&lt;div&gt; &lt;/div&gt;</span> 
+                        <span class="example">&lt;div&gt; &lt;/div&gt;</span>
                         <br>
                         <span>Div står för division, eller behållningselement.</span>
                         <br>
-                        <span>En div fungerar som en container, alltså den innehåller masa element i en låda ungefär, denna sida är byggd på dessa lådor.</span>
-                        <div style="height: 100px;background-color: aquamarine;">   
+                        <span>En div fungerar som en container, alltså den innehåller masa element i en låda ungefär,
+                            denna sida är byggd på dessa lådor.</span>
+                        <div style="height: 100px;background-color: aquamarine;">
                             <p style="padding: 45px;color: black;">Detta kan vara ett exempel på en div</p>
                         </div>
+                        <br>
+                        <span>Koden till denna div är följande; height: 100px;background-color: aquamarine;</span>
                     </div>
                 </div>
                 <div class="wrapper">
@@ -87,21 +129,47 @@
                             <button type="submit" value="Submit" id="submit">Submit</button>
                         </form>
                         <br>
-                            <span>Inputs används innom en form element och används för att lagra användarnas svar.</span>
-                            <span>Man kan kombinera detta med javascript som ni kan läsa på <a style="color: white;" href="javaSC.html">här</a></span>
-                           <br>
-                           <span style="font-size: 20px;">Olika typer</span>
-                           <br>
-                           <span>Den mäst vannliga typen är "text" och "submit"</span> 
-                           <br>
-                           <span>Som ni kan höra på namnent är det vå vanliga typerna vädligt lätta att förstå. Text typen används på en input för att lagra text.</span>
-                           <br>
-                           <span>Medan submit används på buttons för att sicka värdet på inputen.</span>
+                        <span>Inputs används innom en form element och används för att lagra användarnas svar.</span>
+                        <span>Man kan kombinera detta med javascript som ni kan läsa på <a style="color: white;"
+                                href="javaSC.html">här</a></span>
+                        <br>
+                        <span style="font-size: 20px;">Olika typer</span>
+                        <br>
+                        <span>Den mäst vannliga typen är "text" och "submit"</span>
+                        <br>
+                        <span>Som ni kan höra på namnent är det vå vanliga typerna vädligt lätta att förstå. Text typen
+                            används på en input för att lagra text.</span>
+                        <br>
+                        <span>Medan submit används på buttons för att sicka värdet på inputen.</span>
                     </div>
                 </div>
                 <div class="wrapper">
                     <div id="btn" class="subBox">
-                        <span class="example">&lt;Button&gt;</span>
+                        <span class="example">&lt;Button&gt;&lt;/Button&gt;</span>
+                        <br>
+                        <span>En knapp är väldigt simpel men kraftful!</span>
+                        <span>Man kan lägga olika element innom en knapp såsom bilder och strong.</span>
+                        <br>
+                        <span>En knapp är väldigt bra för det är lätt att koppla ihop javascript med en knapp, man
+                            skriver bara onclick="minFunction()"</span>
+                        <br>
+                        <span>&lt;Button onclick="fireBTN(parameter)"&gt;text här&lt;/Button&gt;</span>
+                        <span>Vi kommer gå djupare på funktioner i <a style="color: white;"
+                                href="javaSC.html">Javascript sidan</a></span> <button>Exempel</button>
+                        <br>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div id="a" class="subBox">
+                        <span class="example">&lt;a&gt;&lt;/a&gt;</span>
+                        <br>
+                        <span>Detta element används också väldigt mycket innom webbsidor, man använder detta element för
+                            att sicka användaren till en ny sida eller till en text i samma sida.</span>
+                        <span>För att konfigurera detta element gör man detta. &lt;a href="din
+                            sida"&gt;&lt;/a&gt;.</span>
+                        <br>
+                        <span>Viktigt! För att navigera innom samma sida använd ett hastag innan &lt;a href="#Id på ditt
+                            element"&gt;&lt;/a&gt;</span>
                     </div>
                 </div>
             </div>
@@ -109,4 +177,5 @@
     </div>
     <script src="js.js"></script>
 </body>
+
 </html>
