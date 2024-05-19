@@ -129,12 +129,18 @@ body {
 }
 
 .BTNnav.visible {
-    font-size: 30px;
+    font-size: 0;
 }
 .sideNav.hidden {
     width: 0;
     padding: 0;
     overflow: hidden;
+}
+
+@media screen and (max-width:5000px) {
+    .BTNnav.visible {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -176,6 +182,9 @@ body {
     }
     .BTNnav{
         font-size: 30px;
+    }
+    .BTNnav.visible {
+        font-size: 0;
     }
 }
 
@@ -269,7 +278,6 @@ body {
     color: white;
     z-index: 0;
     text-decoration: none;
-
 }
 
 

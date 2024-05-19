@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="stylecss.css">
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <title>Cascading Style Sheets</title>
 </head>
+
 <body>
     <div class="title">
         <div class="container">
@@ -22,5 +23,112 @@
         <a href="html.html" class="box1">HTML</a>
         <a href="javaSC.html" class="box1">Javascript</a>
     </div>
+    <div class="wrapperMain">
+        <span class="BTNnav" onclick="toggleSideNav()">&#9776;</span>
+        <div class="sideNav">
+            <span class="close" onclick="toggleSideNav()">&times;</span>
+            <a onclick="btn('responsiv')" id="responsiv" class="navBTN" href="#respon"><span>Responsivitet</span></a>
+            <a onclick="btn('Klass')" id="Klass" class="navBTN" href="#klass"><span>Classes</span></a>
+            <a onclick="btn('syntax')" id="syntax" class="navBTN" href="#Syntax"><span>Syntax</span></a>
+            <a onclick="btn('Common')" id="Common" class="navBTN" href="#common"><span>Vanliga property</span></a>
+            <a onclick="btn('gradient')" id="gradient" class="navBTN" href="#Gradient"><span>Gradients</span></a>
+        </div>
+        <div class="mainBox">
+            <div class="wrapper">
+                <div id="respon" class="subBox">
+                    <span class="example">Responsivitet och Varför det är viktigt!</span>
+                    <br>
+                    <span>För att börja göra din sida responsiv, måste du först göra två saker.</span>
+                    <br>
+                    <span>Det första du ska göra är att see till att lägga denna kod i din head tag i html. &lt;meta
+                        name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span>
+                    <br>
+                    <span>Det andra du måste lägga till i din html head tag är. &lt;link rel="stylesheet"
+                        href="namnfil.css"&gt; Där namnfil är vad din css fil heter.</span>
+                    <br>
+                    <br>
+                    <span>När detta är klar kan vi börja.</span>
+                    <br>
+                    <span>@Media är en slags query som kommer att sicka en kod om resten stämmer i detta fall vill vi
+                        att om skärmen är mindre än en viss pixlar så ska elementen bli mindre eller större beronde på
+                        vad det är för något.</span>
+                    <br>
+                    <br>
+                    <span>Detta är hur man gör det. <br> @media screen and (max-width:425px){
+                        <br>
+                        <span>Här inne kommer du kunna lära dig hur man ändrar element med classnamn</span>
+                        <br>
+                        <span>.exempelKlass{font-size:20px;}</span><br>
+                        }</span>
+                    <br>
+                    <span>Men varfär vill man att sidor ska vara responsiva?</span>
+                    <br>
+                    <span>Tänk dig om du ska gå till nordea.se och vill logga in men du kan knappt se något eftersom att
+                        sidan är icke responsiv.</span>
+                    <br>
+                    <span>Inte är det brara oprofessionellt, men kan få dig att förlåra tusentals kunder för att de inte
+                        kan komma åt din produkt.</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div id="klass" class="subBox">
+                    <span class="example">.class</span>
+                    <br>
+                    <span>För attbörja använda classes skriv in class="klassnamn" innanför ditt element.</span>
+                    <br>
+                    <span>&lt;p class="BigText"&gt;&lt;p&gt;</span>
+                    <br>
+                    <span>.BigText{<br>
+                        color:#000000;
+                        <br>
+                        font-size:50px;
+                        <br>
+                        }</span>
+                    <br>
+                    <span>Viktig sak att komma ihåg är att alltid lägga en ; efter varje linje</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div id="Syntax" class="subBox">
+                    <span class="example">Syntax</span>
+                    <br>
+                    <span><img style="max-width: 100%;" src="bilder/img_selector.jpeg"
+                            alt="syntax image, Selector=h1, Declaration=Color and blue, Color = property, blue = Value, Declaration = font-size, and 12px, font-size = property, 12px = Value"></span>
+                    <br>
+                    <span>Förklaring av <a style="color: white;"
+                            href="https://www.w3schools.com/css/css_syntax.asp">W3schools</a></span>
+                    <br>
+                    <span>När man använder ska stila ett element i css kan man också använda sig av själva elementet
+                        istället för en klass, som i bilden ovanför</span>
+                    <br>
+                    <br>
+                    <span>Nu ska vi lära oss om det vanliga property.</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div id="common" class="subBox">
+                    <span class="example">Vanliga property</span>
+                    <br>
+                    <br>
+                    <span>Color</span>
+                    <br>
+                    <span>Color ändrar hur texten på element ser ut man använmder hex eller rgba</span>
+                    <br>
+                    <span>background-color</span>
+                    <br>
+                    <span>background-color, ändrar backgrunden för ett element</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div id="Gradient" class="subBox">
+                    <span class="example">Gradient</span>
+                    <br>
+                    <span>En gradient använder background-color eller background för att fungera. Bra sida är <a style="color: white;" href="https://cssgradient.io/">https://cssgradient.io/</a>.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
 </body>
+
 </html>
