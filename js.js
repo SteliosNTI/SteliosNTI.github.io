@@ -11,10 +11,10 @@ function btn(BTNid) {
     oldBTN = newBTN; 
 }
 function toggleSideNav() {
-    var sideNav = document.querySelector('.sideNav');
+    const sideNav = document.querySelector('.sideNav');
     sideNav.classList.toggle('hidden');
 
-    var butn = document.querySelector('.BTNnav');
+    const butn = document.querySelector('.BTNnav');
     butn.classList.toggle('visible');
 }
 

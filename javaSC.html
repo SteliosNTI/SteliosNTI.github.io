@@ -27,9 +27,10 @@
         <span class="BTNnav" onclick="toggleSideNav()">&#9776;</span>
         <div class="sideNav">
             <span class="close" onclick="toggleSideNav()">&times;</span>
-            <a onclick="btn('Funktion')" id="function" class="navBTN" href="#respon"><span>Funktion</span></a>
+            <a onclick="btn('Function')" id="Function" class="navBTN" href="#Funktion"><span>Funktion</span></a>
             <a onclick="btn('idjs')" id="idjs" class="navBTN" href="#jsID"><span>Id i Javascript</span></a>
             <a onclick="btn('Create')" id="Create" class="navBTN" href="#skapa"><span>Skapa en funktion</span></a>
+            <a onclick="btn('Var')" id="Var" class="navBTN" href="#variabel"><span>Variabel</span></a>
         </div>
         <div class="mainBox">
             <div class="wrapper">
@@ -53,7 +54,6 @@
                         Skriver in i HTML-output med document.write(). <br>
                         Skriver in i en varningsruta med window.alert(). <br>
                         Skriver in i webbläsarkonsolen med console.log().</span>
-
                 </div>
             </div>
             <div class="wrapper">
@@ -73,7 +73,6 @@
                         funktion?</span>
                     <br>
                     <span>Man använder document.getElementById('med en string här altså text')</span>
-                    
                 </div>
             </div>
             <div class="wrapper">
@@ -97,7 +96,21 @@
                     <span>function funktionNamn(btn){let button = document.getElementById(btn);button.style.color = black}</span>
                     <br>
                     <span>Detta skule göra knapen som trycks på svart, efter som att parametern är en string redan blir detta lätt.</span>
-
+                </div>
+            </div>
+            <div class="wrapper">
+                <div id="variabel" class="subBox">
+                    <span class="example">Variablar</span>
+                    <br>
+                    <span>Använd const om variabeln inte kommer att ändras. const x = bild, där bilden komer vara dessama som exempel.</span>
+                    <br>
+                    <span>Använd let om det kommer att ändras till exempel nummer.</span>
+                    <br>
+                    <span class="example"> Det finns 4 viktiga datatyper</span>
+                    <br>
+                    <span>Först är String, Text, Number, Nummer, Boolean,Boolesk, NULL,NULL</span>
+                    <br>
+                    <span>Om du vill läsa på mer klicka här <a style="color: white;" href="https://www.w3schools.com/js/js_datatypes.asp">https://www.w3schools.com/js/js_datatypes.asp</a></span>
                 </div>
             </div>
         </div>
