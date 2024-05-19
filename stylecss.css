@@ -214,6 +214,10 @@ body {
     box-shadow: 0px 0px 0px white;
   }
 
+  .navBTN{
+    font-size: 12px;
+  }
+
   .subBox {
     margin: 5px;
   }
